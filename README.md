@@ -23,48 +23,12 @@
 - 모델 전체 구조
 ![input](./AIMLAB_img/overview.png)
 
-- Token-wise Asymmetric Contrastive Loss
+- Token-wise Asymmetric Contrastive Loss(TAC Loss)
   - ㅇ
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loss Functions</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.8;
-            margin: 20px;
-        }
-        .equation {
-            margin-bottom: 20px;
-            padding: 10px;
-            background: #f9f9f9;
-            border-left: 5px solid #3498db;
-        }
-        .equation p {
-            margin: 0;
-            padding: 5px 0;
-        }
-        .math {
-            font-family: 'Courier New', Courier, monospace;
-        }
-    </style>
-</head>
-<body>
+  - $$
+L_{AM} = - \frac{1}{N} \sum_{i=1}^{N} \log \frac{\exp(s \cdot \cos(\theta_{y_i} + m))}{\exp(s \cdot \cos(\theta_{y_i} + m)) + \exp(s \cdot \cos(\theta_{1-y_i}))}
+$$
 
-  <div class="equation">
-    <p><strong>Token-wise Asymmetric Contrastive Loss (TAC Loss):</strong></p>
-    <p class="math">
-        L<sub>TAC</sub> = (1 / N<sub>T</sub>) &Sigma;<sub>i&isin;L, t&isin;T</sub> L<sup>i,t</sup><sub>TAC</sub>,<br>
-        L<sup>i,t</sup><sub>TAC</sub> = - (1 / N<sub>T</sub>) &Sigma;<sub>j&isin;L, q&isin;T</sub> log 
-        [ exp(z<sup>i</sup><sub>t</sub> &middot; z<sup>j</sup><sub>q</sub> / &tau;) / (n<sub>l</sub> + &gamma; &middot; n<sub>f</sub>) ],<br>
-        n<sub>l</sub> = &Sigma;<sub>k&isin;L, o&isin;T</sub> exp(z<sup>i</sup><sub>t</sub> &middot; z<sup>k</sup><sub>o</sub> / &tau;),<br>
-        n<sub>f</sub> = &Sigma;<sub>s&isin;S</sub> exp(z<sup>i</sup><sub>t</sub> &middot; &psi;(z<sup>*</sup><sub>s</sub>) / &tau;),<br>
-        &psi;(z<sup>*</sup><sub>s</sub>) = Aggregation Function (e.g., Global Max Pooling).
-    </p>
-</div>
 - Angular Margin Loss(AM Loss)
   - d
      
