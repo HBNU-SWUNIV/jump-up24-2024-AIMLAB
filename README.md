@@ -20,8 +20,7 @@
   - 얼굴 안티스푸핑 기술의 향상된 보안성과 정확도는 생체인식 기술 시장의 성장을 가속화
 
 ## System Model
-- ABCD
-
+- 모델 전체 구조
 ![input](./AIMLAB_img/overview.png)
 
 ## Numerical Results
@@ -29,6 +28,7 @@
 
 ## Conclusion
 - ABCD
-
+![input](./AIMLAB_img/table_1.png)
+![input](./AIMLAB_img/table_2.png)
 ## Project Outcome
 - ABCD
