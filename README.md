@@ -23,12 +23,15 @@
 - 모델 전체 구조
 ![input](./AIMLAB_img/overview.png)
 
+- Token-wise Asymmetric Contrastive Loss
+- Angular Margin Loss(AM Loss)
+- Single-category-to-unknown-attacks
+  - 기존 얼굴 안티스푸핑 분야에서 시도되지 않은 프로토콜 제안
+  -  
 ## Numerical Results
-- ABCD
-
-## Conclusion
 - ABCD
 ![input](./AIMLAB_img/table_1.png)
 ![input](./AIMLAB_img/table_2.png)
-## Project Outcome
+## Conclusion
 - ABCD
+
