@@ -25,7 +25,36 @@
 
 - Token-wise Asymmetric Contrastive Loss
   - ㅇ
-  - <div class="equation">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loss Functions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.8;
+            margin: 20px;
+        }
+        .equation {
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f9f9f9;
+            border-left: 5px solid #3498db;
+        }
+        .equation p {
+            margin: 0;
+            padding: 5px 0;
+        }
+        .math {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+
+  <div class="equation">
     <p><strong>Token-wise Asymmetric Contrastive Loss (TAC Loss):</strong></p>
     <p class="math">
         L<sub>TAC</sub> = (1 / N<sub>T</sub>) &Sigma;<sub>i&isin;L, t&isin;T</sub> L<sup>i,t</sup><sub>TAC</sub>,<br>
