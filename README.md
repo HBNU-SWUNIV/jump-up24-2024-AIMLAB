@@ -28,28 +28,25 @@
 <!-- Token-wise Asymmetric Contrastive Loss -->
 <div class="equation">
     <p><strong>Token-wise Asymmetric Contrastive Loss (TAC Loss):</strong></p>
-    <pre>
-L_TAC = (1 / N_T) * Σ<sub>i∈L,t∈T</sub> L_TAC<sup>i,t</sup>,
-L_TAC<sup>i,t</sup> = - (1 / N_T) * Σ<sub>j∈L,q∈T</sub> log(
-    exp(z_t<sup>i</sup> ⋅ z_q<sup>j</sup> / τ) / (n_l + γ ⋅ n_f)
-),
-n_l = Σ<sub>k∈L,o∈T</sub> exp(z_t<sup>i</sup> ⋅ z_o<sup>k</sup> / τ),
-n_f = Σ<sub>s∈S</sub> exp(z_t<sup>i</sup> ⋅ ψ(z_s*) / τ),
-ψ(z_s*) = Aggregation Function (e.g., Global Max Pooling)
-    </pre>
+    <p>
+        L<sub>TAC</sub> = (1 / N<sub>T</sub>) ∑<sub>i∈L, t∈T</sub> L<sup>i,t</sup><sub>TAC</sub>,<br>
+        L<sup>i,t</sup><sub>TAC</sub> = - (1 / N<sub>T</sub>) ∑<sub>j∈L, q∈T</sub> log
+        <span>[ exp(z<sup>i</sup><sub>t</sub> ⋅ z<sup>j</sup><sub>q</sub> / τ) / (n<sub>l</sub> + γ ⋅ n<sub>f</sub>) ]</span>,<br>
+        n<sub>l</sub> = ∑<sub>k∈L, o∈T</sub> exp(z<sup>i</sup><sub>t</sub> ⋅ z<sup>k</sup><sub>o</sub> / τ),<br>
+        n<sub>f</sub> = ∑<sub>s∈S</sub> exp(z<sup>i</sup><sub>t</sub> ⋅ ψ(z<sup>*</sup><sub>s</sub>) / τ),<br>
+        ψ(z<sup>*</sup><sub>s</sub>) = Aggregation Function (e.g., Global Max Pooling).
+    </p>
 </div>
 
-- Angular Margin Loss(AM Loss)
-  -ㅇ
+<!-- Angular Margin Loss -->
 <div class="equation">
     <p><strong>Angular Margin Loss (AM Loss):</strong></p>
-    <pre>
-L_AM = -(1 / N) * Σ<sub>i=1</sub><sup>N</sup> log(
-    exp(s ⋅ cos(θ_yi + m)) /
-    [exp(s ⋅ cos(θ_yi + m)) + exp(s ⋅ cos(θ_(1-yi)))]
-),
-    </pre>
+    <p>
+        L<sub>AM</sub> = -(1 / N) ∑<sub>i=1</sub><sup>N</sup> log
+        <span>[ exp(s ⋅ cos(θ<sub>yi</sub> + m)) / (exp(s ⋅ cos(θ<sub>yi</sub> + m)) + exp(s ⋅ cos(θ<sub>1-yi</sub>))) ]</span>.
+    </p>
 </div>
+
 
 - Single-category-to-unknown-attacks
   - 기존 얼굴 안티스푸핑 분야에서 시도되지 않은 프로토콜 제안
