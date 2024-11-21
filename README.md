@@ -24,6 +24,21 @@
 ![input](./AIMLAB_img/overview.png)
 
 - Token-wise Asymmetric Contrastive Loss
+  - ㅇ
+<!-- Token-wise Asymmetric Contrastive Loss -->
+<div class="equation">
+    <p><strong>Token-wise Asymmetric Contrastive Loss (TAC Loss):</strong></p>
+    <pre>
+L_TAC = (1 / N_T) * Σ<sub>i∈L,t∈T</sub> L_TAC<sup>i,t</sup>,
+L_TAC<sup>i,t</sup> = - (1 / N_T) * Σ<sub>j∈L,q∈T</sub> log(
+    exp(z_t<sup>i</sup> ⋅ z_q<sup>j</sup> / τ) / (n_l + γ ⋅ n_f)
+),
+n_l = Σ<sub>k∈L,o∈T</sub> exp(z_t<sup>i</sup> ⋅ z_o<sup>k</sup> / τ),
+n_f = Σ<sub>s∈S</sub> exp(z_t<sup>i</sup> ⋅ ψ(z_s*) / τ),
+ψ(z_s*) = Aggregation Function (e.g., Global Max Pooling)
+    </pre>
+</div>
+
 - Angular Margin Loss(AM Loss)
 - Single-category-to-unknown-attacks
   - 기존 얼굴 안티스푸핑 분야에서 시도되지 않은 프로토콜 제안
