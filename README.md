@@ -21,7 +21,6 @@
 
 ## System Model
 - ABCD
-![image](https://github.com/user-attachments/assets/00119ab8-75f5-423e-a491-a945304aa66c)
 
 ## Numerical Results
 - ABCD
