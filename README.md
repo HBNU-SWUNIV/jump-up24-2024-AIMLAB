@@ -22,6 +22,7 @@
 ## System Model
 - ABCD
 <img src="./AIMLAB_img/overview.png" alt="Alt Text" width="300">
+![input](./AIMLAB_img/overview.png)
 
 ## Numerical Results
 - ABCD
