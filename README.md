@@ -40,6 +40,17 @@ n_f = Σ<sub>s∈S</sub> exp(z_t<sup>i</sup> ⋅ ψ(z_s*) / τ),
 </div>
 
 - Angular Margin Loss(AM Loss)
+  -ㅇ
+<div class="equation">
+    <p><strong>Angular Margin Loss (AM Loss):</strong></p>
+    <pre>
+L_AM = -(1 / N) * Σ<sub>i=1</sub><sup>N</sup> log(
+    exp(s ⋅ cos(θ_yi + m)) /
+    [exp(s ⋅ cos(θ_yi + m)) + exp(s ⋅ cos(θ_(1-yi)))]
+),
+    </pre>
+</div>
+
 - Single-category-to-unknown-attacks
   - 기존 얼굴 안티스푸핑 분야에서 시도되지 않은 프로토콜 제안
   -  
