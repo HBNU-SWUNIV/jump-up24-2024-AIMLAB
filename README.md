@@ -25,12 +25,11 @@
 
 - Token-wise Asymmetric Contrastive Loss(TAC Loss)
   - ㅇ
-  - $$
-L_{AM} = - \frac{1}{N} \sum_{i=1}^{N} \log \frac{\exp(s \cdot \cos(\theta_{y_i} + m))}{\exp(s \cdot \cos(\theta_{y_i} + m)) + \exp(s \cdot \cos(\theta_{1-y_i}))}
-$$
+ ![input](./AIMLAB_img/TAC_Loss.png)
 
 - Angular Margin Loss(AM Loss)
   - d
+  ![input](./AIMLAB_img/AM_Loss.png)
      
 - Single-category-to-unknown-attacks
   - 기존 얼굴 안티스푸핑 분야에서 시도되지 않은 프로토콜 제안
