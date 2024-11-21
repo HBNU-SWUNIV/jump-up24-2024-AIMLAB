@@ -44,9 +44,14 @@
   - 여러 공격 유형에 대해 동시에 모델의 일반화 성능을 평가함으로써, 실제 배포 가능한 FAS 시스템을 평가하는 데 적합.
   - 
 ## Numerical Results
-- ABCD
+- Table 1
+  - 제안한 Single-category-to-unknown-attacks 프로토콜에 대해 최신 기법과 비교 실험 진행 
 ![input](./AIMLAB_img/table_1.png)
+
+- Table 2
+  - 기존 프로토콜에 대해 최신 기법과 비교 실험 진행
 ![input](./AIMLAB_img/table_2.png)
+
 ## Conclusion
 - ABCD
 
