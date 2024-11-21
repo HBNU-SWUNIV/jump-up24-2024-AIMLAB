@@ -25,29 +25,20 @@
 
 - Token-wise Asymmetric Contrastive Loss
   - ㅇ
-<!-- Token-wise Asymmetric Contrastive Loss -->
-<div class="equation">
+  - <div class="equation">
     <p><strong>Token-wise Asymmetric Contrastive Loss (TAC Loss):</strong></p>
-    <p>
-        L<sub>TAC</sub> = (1 / N<sub>T</sub>) ∑<sub>i∈L, t∈T</sub> L<sup>i,t</sup><sub>TAC</sub>,<br>
-        L<sup>i,t</sup><sub>TAC</sub> = - (1 / N<sub>T</sub>) ∑<sub>j∈L, q∈T</sub> log
-        <span>[ exp(z<sup>i</sup><sub>t</sub> ⋅ z<sup>j</sup><sub>q</sub> / τ) / (n<sub>l</sub> + γ ⋅ n<sub>f</sub>) ]</span>,<br>
-        n<sub>l</sub> = ∑<sub>k∈L, o∈T</sub> exp(z<sup>i</sup><sub>t</sub> ⋅ z<sup>k</sup><sub>o</sub> / τ),<br>
-        n<sub>f</sub> = ∑<sub>s∈S</sub> exp(z<sup>i</sup><sub>t</sub> ⋅ ψ(z<sup>*</sup><sub>s</sub>) / τ),<br>
-        ψ(z<sup>*</sup><sub>s</sub>) = Aggregation Function (e.g., Global Max Pooling).
+    <p class="math">
+        L<sub>TAC</sub> = (1 / N<sub>T</sub>) &Sigma;<sub>i&isin;L, t&isin;T</sub> L<sup>i,t</sup><sub>TAC</sub>,<br>
+        L<sup>i,t</sup><sub>TAC</sub> = - (1 / N<sub>T</sub>) &Sigma;<sub>j&isin;L, q&isin;T</sub> log 
+        [ exp(z<sup>i</sup><sub>t</sub> &middot; z<sup>j</sup><sub>q</sub> / &tau;) / (n<sub>l</sub> + &gamma; &middot; n<sub>f</sub>) ],<br>
+        n<sub>l</sub> = &Sigma;<sub>k&isin;L, o&isin;T</sub> exp(z<sup>i</sup><sub>t</sub> &middot; z<sup>k</sup><sub>o</sub> / &tau;),<br>
+        n<sub>f</sub> = &Sigma;<sub>s&isin;S</sub> exp(z<sup>i</sup><sub>t</sub> &middot; &psi;(z<sup>*</sup><sub>s</sub>) / &tau;),<br>
+        &psi;(z<sup>*</sup><sub>s</sub>) = Aggregation Function (e.g., Global Max Pooling).
     </p>
 </div>
-
-<!-- Angular Margin Loss -->
-<div class="equation">
-    <p><strong>Angular Margin Loss (AM Loss):</strong></p>
-    <p>
-        L<sub>AM</sub> = -(1 / N) ∑<sub>i=1</sub><sup>N</sup> log
-        <span>[ exp(s ⋅ cos(θ<sub>yi</sub> + m)) / (exp(s ⋅ cos(θ<sub>yi</sub> + m)) + exp(s ⋅ cos(θ<sub>1-yi</sub>))) ]</span>.
-    </p>
-</div>
-
-
+- Angular Margin Loss(AM Loss)
+  - d
+     
 - Single-category-to-unknown-attacks
   - 기존 얼굴 안티스푸핑 분야에서 시도되지 않은 프로토콜 제안
   -  
